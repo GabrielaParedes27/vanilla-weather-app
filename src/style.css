@@ -1,0 +1,137 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 300;
+  text-align: center;
+  box-shadow: 0px 8px 8px 0 rgba(37, 39, 89, 0.08);
+  transition: all 200ms ease;
+}
+
+h2 {
+  color: gray;
+  font-weight: 500;
+  font-size: 35px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+li {
+  list-style: none;
+}
+
+.searching-bar {
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  border-radius: 10px;
+  border: 1px solid #149afb;
+  text-align: center;
+  color: #149afb;
+}
+
+#search-button {
+  background-color: #07689f;
+  color: #fdfbfb;
+  border: 2px solid #07689f;
+}
+
+#search-button:hover {
+  background: transparent;
+  color: #07689f;
+  cursor: pointer;
+}
+
+#current-button {
+  background-color: #a2d5f2;
+  color: #fdfbfb;
+  border: 2px solid #a2d5f2;
+}
+
+#current-button:hover {
+  background: transparent;
+  color: #a2d5f2;
+  cursor: pointer;
+}
+
+.weather-app {
+  width: 800px;
+  margin: 30px 0 auto;
+  padding: 20px;
+  border: 1px solid #f9f7fe;
+  border-radius: 10px;
+  background-image: #fdfbfb;
+}
+
+.ppal-temp {
+  margin: 50px 0 0 80px;
+}
+
+.ppal-temp .location {
+  padding-top: 20px;
+}
+
+.ppal-temp img {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.ppal-temp strong {
+  font-size: 48px;
+  font-weight: 400;
+  color: #07689f;
+}
+
+.ppal-temp small {
+  position: relative;
+  font-size: 16px;
+  top: -22px;
+}
+
+.details-info {
+  margin: 5px;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  background-color: #ffc93c;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  box-shadow: 0px 8px 8px 0 rgba(37, 39, 89, 0.08);
+}
+
+.card-day {
+  margin: 20px 5px 0px 5px;
+  color: white;
+  border-radius: 10px;
+
+  text-align: center;
+  background-color: #40a8c4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  box-shadow: 0px 8px 8px 0 rgba(37, 39, 89, 0.08);
+}

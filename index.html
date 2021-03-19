@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>Vanilla weather app</title>
 </head>
 <body>
     <div class="container">
-        <form class="seacher">
-            <input type="search" placeholder="Search another city"/>
+        <div class="weather-app">
+
+            <div class="searching-bar">
+            <input id="search-bar" type="search" placeholder="Search another city"/>
             <button id="search-button">Search</button>
-            <button id="current-city">Current</button>
-        </form>
+            <button id="current-button">Current</button>
+            </div>
+
      <div class="row">
          <div class="col-6">
-             <img src="https://images.emojiterra.com/google/android-nougat/512px/2600.png" alt="sunny" width= 80px>
-             12°C | F
+             <div class="ppal-temp">
+             <img src="https://images.emojiterra.com/google/android-nougat/512px/2600.png" alt="sunny">
+             <strong>
+             12°
+            </strong>
+            <small>
+            C | F
+            </small>
+            <h2 class="location">
+                New York, USA
+            </h2>
+            </div>
          </div>
          <div class="col-6">
-             <h2>
-                 New York, USA
-             </h2>
+             <div class="details-info">
+             <h3>
+                Monday, February 22 2021 | 22:15
+             </h3>
+             <h5>
+                Mostly cloudy throughout the day
+             </h5>
              <ul>
                  <li>
                      Precipitation: 0%
@@ -36,8 +55,79 @@
                      Wind: 2 km/hr 
                  </li>
              </ul>
+            </div>
          </div>
-     </div>   
+     </div>
+     <div class="card-group">
+         <div class="col">
+             <div class=card-day id="day-1">
+                 <div class="card-body">
+                     <h5>
+                         day 1
+                     </h5>
+                     <p>
+                         temp
+                     </p>
+                 </div>
+             </div>
+         </div>
+        <div class="col">
+            <div class=card-day id="day-2">
+                <div class="card-body">
+                    <h5>
+                        day 2
+                    </h5>
+                    <p>
+                        temp
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class=card-day id="day-3">
+                <div class="card-body">
+                    <h5>
+                        day 3
+                    </h5>
+                    <p>
+                        temp
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class=card-day id="day-4">
+                <div class="card-body">
+                    <h5>
+                        day 4
+                    </h5>
+                    <p>
+                        temp
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class=card-day id="day-5">
+                <div class="card-body">
+                    <h5>
+                        day 5
+                    </h5>
+                    <p>
+                        temp
+                    </p>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    </div>
+    <small>
+        <a href="https://github.com/GabrielaParedes27/vanilla-weather-app.git" target="_blank">
+            Open-source code
+        </a>
+        by Gabriela Paredes
+    </small>
     </div>
 <script src="src/app.js"></script>
 </body>
