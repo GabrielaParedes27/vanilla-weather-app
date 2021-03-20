@@ -8,6 +8,7 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Vanilla weather app</title>
 </head>
@@ -25,35 +26,21 @@
          <div class="col-6">
              <div class="ppal-temp">
              <img src="https://images.emojiterra.com/google/android-nougat/512px/2600.png" alt="sunny">
-             <strong>
-             12°
-            </strong>
+             <strong id="temp-element"></strong>
             <small>
             C | F
             </small>
-            <h2 class="location">
-                New York, USA
-            </h2>
+            <h2 class="location" id="city"></h2>
             </div>
          </div>
          <div class="col-6">
              <div class="details-info">
-             <h3>
-                Monday, February 22 2021 | 22:15
-             </h3>
-             <h5>
-                Mostly cloudy throughout the day
-             </h5>
+             <h3 id="date"></h3>
+             <h5 id="description"></h5>
              <ul>
-                 <li>
-                     Precipitation: 0%
-                 </li>
-                 <li>
-                     Humidity: 5%
-                 </li>
-                 <li>
-                     Wind: 2 km/hr 
-                 </li>
+                 <li id="precipitation"></li>
+                 <li id="humidity"></li>
+                 <li id="wind"></li>
              </ul>
             </div>
          </div>
