@@ -36,7 +36,10 @@ return `${day}, ${month} ${dayNumber} ${year} | ${hours}:${minutes}`;
 
 function displayTemp(response) {
     document.querySelector("#city").innerHTML = response.data.name + ", " + response.data.sys.country;
-    document.querySelector("#temp-element").innerHTML = Math.round(response.data.main.temp) + "°";
+
+    celsiusTemp = response.data.main.temp;
+
+    document.querySelector("#temp-element").innerHTML = Math.round(celsiusTemp) + "°";
     document.querySelector("#description").innerHTML = response.data.weather[0].description;
     document.querySelector("#date").innerHTML = formatDate(response.data.dt*1000);
     document.querySelector("#precipitation").innerHTML = "Precipitation: " + response.data.clouds.all + "%";
@@ -59,7 +62,32 @@ function handleSubmit(event) {
     search(cityInputElement.value);
 }
 
-search("New York");
+function displayFahrenheit(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#temp-element");
+    celsiusLink.classList.remove("active");
+    fahrenheitLink.classList.add("active");
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    tempElement.innerHTML = Math.round(fahrenheitTemp) + "°";
+}
+
+function displayCelsius(event) {
+    event.preventDefault();
+    celsiusLink.classList.add("active");
+    fahrenheitLink.classList.remove("active");
+    let tempElement = document.querySelector("#temp-element");
+    tempElement.innerHTML = Math.round(celsiusTemp) + "°";
+}
+
+let celsiusTemp = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+search("New York");
