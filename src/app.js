@@ -42,7 +42,9 @@ function displayTemp(response) {
     document.querySelector("#precipitation").innerHTML = "Precipitation: " + response.data.clouds.all + "%";
     document.querySelector("#humidity").innerHTML = "Humidity: " + response.data.main.humidity + "%";
     document.querySelector("#wind").innerHTML = "Wind: " + Math.round(response.data.wind.speed) + "km/hr";
-
+    let newIcon = document.querySelector("#icon");
+    newIcon.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    newIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
 
