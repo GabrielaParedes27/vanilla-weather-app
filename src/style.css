@@ -25,7 +25,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -173,4 +173,21 @@ li {
 
 .ppal-temp .active:hover {
   text-decoration: none;
+}
+
+.fas {
+  float: left;
+  margin-right: 8px;
+}
+
+.location-icon {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  color: gray;
+  font-weight: 500;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 28px;
 }

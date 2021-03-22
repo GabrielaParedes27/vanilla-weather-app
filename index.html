@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/3bc72dab0c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Vanilla weather app</title>
 </head>
@@ -30,7 +31,10 @@
             <small>
             <a href="" class="active" id="celsius">C</a> | <a href="" id="fahrenheit">F</a> 
             </small>
+            <div class="location-icon">
+            <i class="fas fa-map-marker-alt" #location></i>
             <h2 class="location" id="city"></h2>
+            </div>
             </div>
          </div>
          <div class="col-6">
@@ -38,10 +42,10 @@
              <h3 id="date"></h3>
              <h5 id="description"></h5>
              <ul>
-                 <li id="precipitation"></li>
-                 <li id="humidity"></li>
-                 <li id="wind"></li>
-                 <li id="feels-like"></li>
+                <i class="fas fa-cloud-showers-heavy"></i><li id="precipitation"></li>
+                <i class="fas fa-tint"></i><li id="humidity"></li>
+                <i class="fas fa-wind"></i><li id="wind"></li>
+                <i class="fas fa-temperature-high"></i><li id="feels-like"></li>
              </ul>
             </div>
          </div>
